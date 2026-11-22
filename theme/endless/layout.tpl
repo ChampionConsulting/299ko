@@ -40,7 +40,7 @@
 <div id="footer">
 	<div id="footer_content">
 			{% HOOK.footer %}
-				<p>		<a target='_blank' href='https://github.com/ChampionConsulting/'>{{ Lang.site-just-using( ) }}</a>
+				<p>		<a target='_blank' href='https://github.com/ChampionConsulting/299ko'>{{ Lang.site-just-using( ) }}</a>
 						-
 						{{ Lang.site-theme }}
 						{{ SHOW.theme }}
