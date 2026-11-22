@@ -1,0 +1,8 @@
+{
+    "name": "MDEditor",
+    "icon" : "fa-brands fa-markdown",
+    "description": "MDEditor is a MarkDown WYSIWYG",
+    "authorEmail": "info@championconsulting.com",
+    "authorWebsite" : "https://www.championconsulting.com/",
+    "version": "2.0"
+}

@@ -1,0 +1,10 @@
+{
+    "slug" : "configmanager",
+    "name" : "Configuration",
+    "icon" : "fa-solid fa-gears",
+    "description" : "Configuration Manager",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod" : "ConfigManagerAdminController#home"
+}

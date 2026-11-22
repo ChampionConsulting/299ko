@@ -1,0 +1,56 @@
+<?php
+
+/**
+ * @copyright (C) 2024, Champion Consulting, LLC.
+ * @license https://license.championconsulting.com/cms/champion-public-license-v3.0.html CPLv3
+ * @author Andrew Champion <andrew@championconsulting.com>
+ * 
+ * @package https://github.com/ChampionConsulting/champion-cms
+ */
+defined('ROOT') OR exit('Access denied!');
+
+class StringResponse extends Response {
+
+    /**
+     * Current theme name
+     * @var Theme
+     */
+    protected Theme $theme;
+
+    public function __construct() {
+        parent::__construct();
+        $this->theme = new Theme(core::getInstance()->getConfigVal('theme'));
+    }
+
+    /**
+     * Return the response
+     * @return string Content of all template
+     */
+    public function output():string
+    {
+        $content = '';
+        foreach ($this->templates as $tpl) {
+            $content .= $tpl->output();
+        }
+        return $content;
+    }
+
+    /**
+     * Create a new Template, from plugin
+     * Eg : if plugin is 'blog' & asked template is 'read', look for 'THEMES/theme/template/blog.read.tpl'
+     * else create tpl with PLUGINS/blog/template/read.tpl
+     * @param string $pluginName
+     * @param string $templateName
+     * @return Template
+     */
+    public function createPluginTemplate(string $pluginName, string $templateName):Template {
+        $themeFile = $this->theme->getPluginTemplatePath($pluginName, $templateName) ?? '';
+        if (file_exists($themeFile)) {
+            $tpl = new Template($themeFile);
+        } else {
+            $tpl = new Template(PLUGINS . $pluginName .'/template/' . $templateName . '.tpl');
+        }
+        return $tpl;
+    }
+
+}

@@ -1,0 +1,9 @@
+{
+    "name" : "LightStats",
+    "icon" : "fa-solid fa-chart-simple",
+    "description" : "Simple and visitor-friendly statistics",
+    "authorEmail" : "info@championconsulting.com",
+    "authorWebsite" : "https://www.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod" : "LightStatsAdminController#home"
+}

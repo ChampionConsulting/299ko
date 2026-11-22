@@ -1,0 +1,10 @@
+{
+    "slug" : "filemanager",
+    "name" : "File Manager",
+    "icon" : "fa-regular fa-file",
+    "description" :"Allows transferring and managing files on the server",
+    "authorEmail" : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod" : "FileManagerAPIController#home"
+}

@@ -1,0 +1,8 @@
+{
+    "priority":2
+}    
+
+"repos": {
+        "plugin": "ChampionConsulting\/champion-cms-plugins",
+        "theme": "ChampionConsulting\/champion-cms-themes"
+    }

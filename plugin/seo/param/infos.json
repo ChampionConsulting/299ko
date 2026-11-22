@@ -1,0 +1,10 @@
+{
+    "slug" : "seo",
+    "name" : "SEO",
+    "icon" : "fa-solid fa-magnifying-glass-chart",
+    "description" : "Adds options for social networks",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod"  : "SEOAdminController#home"
+}

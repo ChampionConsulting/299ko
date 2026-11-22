@@ -1,0 +1,11 @@
+{
+    "slug" : "contact",
+    "name" : "Contact",
+    "icon" : "fa-solid fa-address-card",
+    "description" : "Contact Form",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homePublicMethod" : "ContactController#home",
+    "homeAdminMethod" : "ContactAdminController#home"
+}

@@ -1,0 +1,9 @@
+{
+    "cacheDuration": "3600",
+    "remote_api_key_1": "",
+    "remote_api_key_2": "",
+    "repos": {
+        "plugin": "ChampionConsulting\/champion-cms-plugins",
+        "theme": "ChampionConsulting\/champion-cms-themes"
+    }
+}

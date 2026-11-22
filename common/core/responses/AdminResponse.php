@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @copyright (C) 2024, Champion Consulting, LLC.
+ * @license https://license.championconsulting.com/cms/champion-public-license-v3.0.html CPLv3
+ * @author Andrew Champion <andrew@championconsulting.com>
+ * 
+ * @package https://github.com/ChampionConsulting/champion-cms
+ */
+defined('ROOT') OR exit('Access denied!');
+
+class AdminResponse extends Response {
+
+    /**
+     * Layout
+     * @var Template
+     */
+    protected Template $layout;
+
+    protected ?string $title = null;
+
+    public function __construct() {
+        parent::__construct();
+        $this->layout = new Template(ADMIN_PATH .'layout.tpl');
+    }
+
+    /**
+     * Create a new Template, from plugin
+     * @param string $pluginName
+     * @param string $templateName
+     * @return Template
+     */
+    public function createPluginTemplate(string $pluginName, string $templateName):Template {
+        $file = PLUGINS . $pluginName . '/template/' . $templateName . '.tpl';
+        $tpl = new Template($file);
+        return $tpl;
+    }
+
+    /**
+     * Return the response
+     * @return string Content of all template
+     */
+    public function output():string
+    {
+        $content = '';
+        foreach ($this->templates as $tpl) {
+            $content .= $tpl->output();
+        }
+        $this->layout->set('CONTENT', core::getInstance()->callHook('adminContent', $content));
+        $this->layout->set('PAGE_TITLE' , $this->title ?? false);
+        return $this->layout->output();
+    }
+
+    /**
+     * Set the title of the admin page
+     * @param string $title
+     */
+    public function setTitle(string $title) {
+        $this->title = $title;
+    }
+}

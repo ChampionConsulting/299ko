@@ -1,0 +1,11 @@
+{
+    "slug" : "blog",
+    "name" : "Blog",
+    "icon" : "fa-regular fa-newspaper",
+    "description" : "Blog management",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homePublicMethod" : "BlogListController#home",
+    "homeAdminMethod" : "BlogAdminPostsController#list"
+}

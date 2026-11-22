@@ -1,0 +1,12 @@
+{
+    "priority" : "1",
+    "pluginName" : "wiki",
+    "label" : "Documentation",
+    "homeText" : "Welcome to the Wiki Documentation. Find all the guides and useful information here.",
+    "displayTOC" : "",
+    "hideContent" : "0",
+    "enableVersioning" : "1",
+    "enableInternalLinks" : "0",
+    "showLastActivity" : "0",
+    "showCategoryTree" : "0"
+}

@@ -1,0 +1,9 @@
+{
+    "name": "HighLight",
+    "icon" : "fa-solid fa-highlighter",
+    "description": "Code syntax highlighting",
+    "authorEmail": "info@championconsulting.com",
+    "authorWebsite" : "https://www.championconsulting.com/",
+    "version": "2.0",
+    "homeAdminMethod" : "HighlightAdminController#home"
+}

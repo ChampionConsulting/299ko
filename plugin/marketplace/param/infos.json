@@ -1,0 +1,10 @@
+{
+    "slug": "marketplace",
+    "name": "Marketplace Old",
+    "icon": "fa-solid fa-store",
+    "description": "Marketplace for more plugins and themes",
+    "authorEmail": "info@championconsulting.com",
+    "authorWebsite": "https://www.championconsulting.com",
+    "version": "2.0.0",
+    "homeAdminMethod": "MarketplaceAdminController#index"
+}

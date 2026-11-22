@@ -1,0 +1,11 @@
+{
+    "slug" : "gallery",
+    "name" : "Gallery",
+    "icon" : "fa-regular fa-images",
+    "description" : "A simple and clean photo Gallery",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homePublicMethod" : "GalleryController#home",
+    "homeAdminMethod" : "GalleryAdminController#home"
+}

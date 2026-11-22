@@ -1,0 +1,34 @@
+<form method="post" action="{{ ROUTER.generate("admin-gallery-save-config")}}">
+    {{ SHOW.tokenField()}}
+
+    <p>
+        <input {% if runPlugin.getConfigVal("showTitles") %} checked {% endif %} type="checkbox" name="showTitles" id="showTitles" />
+        <label for="showTitles">{{ Lang.gallery.show-image-titles }}</label>
+    </p>
+
+    <p>
+        <label for="label">{{ Lang.gallery.page-title }}</label><br>
+        <input type="text" name="label" id="label" value="{{ runPlugin.getConfigVal("label") }}" />
+    </p>
+    <p>
+        <label for="order">{{ Lang.gallery.image-order }}</label><br>
+        <select name="order" id="order">
+            <option value="natural" {% if runPlugin.getConfigVal("order") == "natural" %} selected {% endif %}>{{ Lang.gallery.natural-order }}</option>
+            <option value="byName" {% if runPlugin.getConfigVal("order") == "byName" %} selected {% endif %}>{{ Lang.gallery.order-by-name }}</option>
+            <option value="byDate" {% if runPlugin.getConfigVal("order") == "byDate" %} selected {% endif %}>{{ Lang.gallery.order-by-date }}</option>
+        </select>
+    </p>
+    <p>
+        <label for="size">{{ Lang.gallery.image-size }}</label><br>
+        <select name="size" id="size">
+            <option value="800" {% if runPlugin.getConfigVal("size") == "800" %} selected {% endif %}>{{ Lang.gallery.small }}</option>
+            <option value="1024" {% if runPlugin.getConfigVal("size") == "1024" %} selected {% endif %}>{{ Lang.gallery.large }}</option>
+            <option value="1280" {% if runPlugin.getConfigVal("size") == "1280" %} selected {% endif %}>{{ Lang.gallery.extra-large }}</option>
+        </select>
+    </p>
+    <p>
+        {{ galleryGenerateEditor() }}
+    </p>
+
+    <p><button type="submit" class="button">{{ Lang.submit }}</button></p>
+</form>

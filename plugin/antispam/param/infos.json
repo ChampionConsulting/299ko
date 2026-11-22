@@ -1,0 +1,10 @@
+{
+    "slug" : "antispam",
+    "name" : "Antispam",
+    "icon" : "fa-solid fa-shield-virus",
+    "description" : "Protects your forms from spam bots",
+    "authorEmail" : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod" : "AntispamAdminController#home"
+}

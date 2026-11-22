@@ -1,0 +1,10 @@
+{
+    "slug" : "pluginsmanager",
+    "name" : "Plugins",
+    "icon" : "fa-solid fa-puzzle-piece",
+    "description" : "Plugins Management",
+    "authorEmail"   : "info@championconsulting.com",
+    "authorWebsite" : "https://cms.championconsulting.com/",
+    "version" : "2.0",
+    "homeAdminMethod" : "PluginsManagerController#list"
+}

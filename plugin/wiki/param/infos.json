@@ -1,0 +1,11 @@
+{
+    "slug" : "wiki",
+    "name" : "wiki",
+    "icon" : "fa-solid fa-book",
+    "description" : "Managing Wiki-style documentation with a version control system",
+    "authorEmail" : "info@championconsulting.com",
+    "authorWebsite" : "https://www.championconsulting.com",
+    "version" : "2.0",
+    "homePublicMethod" : "WikiListController#home",
+    "homeAdminMethod" : "WikiAdminPagesController#list"
+}

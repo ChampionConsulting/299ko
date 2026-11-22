@@ -1,0 +1,5 @@
+{
+    "afterAdminTitle" : "configManagerDisplayInstallFile",
+    "adminHead" : "configManagerCheckNewVersion",
+    "adminToolsTemplates" : "configmanagerBackupTemplates"
+}
